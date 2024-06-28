@@ -1,0 +1,18 @@
+*{
+    box-sizing: 500px;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 10px;
+    border-radius: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: #fcf8f8;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

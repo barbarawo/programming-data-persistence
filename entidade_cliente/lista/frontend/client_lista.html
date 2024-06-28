@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <met   a http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de clientes</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            const serverURL = "http://localhost:3333/cliente"; 
+            async  function loadData(){
+                const table = document.getElementById("cliente_table_data");
+                const requestResult = await window.fetch(serverURL);
+                const objects = await requestResult.json();
+                objects.forEach(object => {
+                    let tr = document.createElement("tr");
+                    let tdCol1= document.createElement("td");
+                    let tdCol2 = document.createElement("td");
+                    let tdCol3 = document.createElement("td");
+                    tdCol1.innerHTML = object.nome;
+                    tdCol2.innerHTML = object.cpf;
+                    tdCol3.innerHTML = object.endereco;
+                    tr.appendChild(tdCol1);
+                    tr.appendChild(tdCol2);
+                    tr.appendChild(tdCol3);
+                    table.appendChild(tr);
+                });
+            }
+        </script>
+    </head>
+    <body onload="loadData()">
+        <h1>Cadastro de Clientes</h1>   
+        <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            CPF
+                        </th>
+                        <th>
+                            Endereco
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="cliente_table_data">
+                </tbody>
+            </table>
+    </body>
+</html>

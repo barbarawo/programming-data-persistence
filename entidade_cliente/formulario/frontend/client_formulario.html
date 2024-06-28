@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <met   a http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de clientes</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Cadastro de clientes</h1>
+        <br />
+        <form action="http://localhost:3333/cliente" method="POST">
+            <label for="nome">Nome :</label><br/>
+            <input name="nome" id="nome" placeholder="Digite o seu nome"/> <br/>
+            <br />
+            <label for="cpf">CPF:</label><br/>
+            <input name="cpf" id="cpf" placeholder="Digite o seu CPF sem pontuação"/><br/>
+            <br />
+            <label for="endereco">Endereço:</label><br/>
+            <input name="endereco" id="endereco" placeholder="Digite o seu endereço"/><br/>
+            <br />
+            <input class="botao" type="submit" id="bt_submit" value = "Cadastrar" />
+        </form>    
+    </body>
+
+</html>

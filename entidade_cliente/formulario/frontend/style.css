@@ -1,0 +1,33 @@
+*{
+    box-sizing: 500px;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 10px;
+    border-radius: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: #FFFFFF;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    background-color: #3d9ce4;
+    color: #030303;
+    width: 70%;
+    border-radius: 14px;
+    padding: 8px;
+    border: 0;
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.botao:hover{
+    background-color: #a5d8ff;
+}
